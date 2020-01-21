@@ -1,0 +1,244 @@
+<resources>
+    <string name="app_name">iTexico</string>
+    <!-- Strings related to login -->
+    <string name="prompt_username">Username/E-mail</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_ssn_tin">SSN/TIN (No Dashes)</string>
+    <string name="action_sign_in">Login</string>
+    <string name="action_submit">Submit</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="forgot_password">forgot your password?</string>
+    <string name="contact">Contact</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="todo">TODO</string>
+
+    <string name="login_image_content_desc">Company Logo</string>
+    <string name="title_activity_main_nav">MainNavActivity</string>
+    <string name="title_payments">Payments</string>
+    <string name="title_history">History</string>
+    <string name="title_statements">Statements</string>
+    <string name="title_balances">Balances</string>
+    <string name="title_menu">Menu</string>
+    <string name="title_amount_received">Amount Received</string>
+    <string name="title_description">Description</string>
+
+    <string name="welcome_text">WELCOME</string>
+    <string name="welcome_message_text">
+        Welcome to Flat Branch Mortgage Inc. We appreciate your business. If you would like to contact
+        our servicing department and speak with a customer service representative, please call our
+        toll free number at (877)350-0350 or email servicing@fbhl.com.
+        Disclaimer smaller font bottom of screen:
+        Copyright 2015 Financial Industry Computer Systems, Inc. All rights reserved. FICS is a registered
+        trademark of Financial Industry Computer Systems, Inc. eStatus Connect is a registered trademark
+        of Financial Industry Computer Systems, Inc.</string>
+
+    <string name="AutoCompleteAddress">1234 - Green Hill (333-333-333)</string>
+    <string name="payments_last_payment">Last Payment</string>
+    <string name="payment_number_with_digit">No 1</string>
+    <string name="history_number_string">No</string>
+    <string name="history_number_digit">1</string>
+    <string name="payments_check_content_desc">Green Check Icon</string>
+    <string name="amount_last_payment">$2,000.89</string>
+    <string name="date_last_payment">November - 10</string>
+    <string name="due_date_payments_data">Due Date: December 14th</string>
+    <string name="total_amount_due_label">Total Amount Due</string>
+    <string name="payment_button_text">Make Payment</string>
+    <string name="loan_selection_hint">Loan #</string>
+    <string name="scheduled_payments_text"><u>Scheduled payments</u></string>
+    <string name="calendar_event_cd">Calendar Event Icon</string>
+    <string name="clock_icon_cd">Clock Icon</string>
+    <string name="scheduled_payment_amount">$2,000.00</string>
+    <string name="date_scheduled_payment">Nov - 10</string>
+    <string name="menu_top_image_cd">Logo Image</string>
+    <string name="principal_balance_text">Principal Balance</string>
+    <string name="principal_balance_string">$258,000.89</string>
+    <string name="image_property_cd">Property Image</string>
+    <string name="profile_menu_text">Profile</string>
+    <string name="profile_icon_cd">Profile menu icon</string>
+    <string name="profile_picture_cd">Profile Pic</string>
+    <string name="payment_menu_text">Payment Information</string>
+    <string name="bank_info_menu_text">Bank Information</string>
+    <string name="account_notes_menu_text">Account Notes</string>
+    <string name="payoff_menu_text">Payoff Request</string>
+    <string name="about_menu_text">About</string>
+    <string name="help_menu_text">Help</string>
+    <string name="logout_menu_text">Log out</string>
+    <string name="no_information_string">Sorry, we don\'t have information\n available for the moment.</string>
+
+    <string name="payment_info_fragment">Payment Information</string>
+    <string name="bank_info_fragment">Bank Information</string>
+    <string name="payoff_info_fragment">Payoff Information</string>
+    <string name="about_fragment">About</string>
+    <string name="help_fragment">Help</string>
+    <string name="back_arrow_content_description">Back Button</string>
+    <string name="first_name_hint">First Name</string>
+    <string name="last_name_hint">Last Name</string>
+    <string name="email_address_hint">Email Address</string>
+    <string name="company_hint">Company</string>
+    <string name="city_hint">City</string>
+    <string name="state_hint">State</string>
+    <string name="zip_code_hint">Zip Code</string>
+    <string name="phone_hint">Phone</string>
+    <string name="loan_number_string">Loan Number</string>
+    <string name="loan_example_string">0123456789</string>
+    <string name="address1_string">Address 1</string>
+    <string name="address1_example">Somewhere Over</string>
+    <string name="address2_string">Address 2</string>
+    <string name="address2_example">The Rainbow</string>
+    <string name="city_example">Dorothy\'s Town</string>
+    <string name="state_example">KS</string>
+    <string name="home_phone_hint">Home Phone</string>
+    <string name="home_phone_example">012-345-6789</string>
+    <string name="home_phone_example2">987-654-3210</string>
+    <string name="business_phone_hint">Business Phone</string>
+    <string name="email_profile_hint">Email</string>
+    <string name="profile_email_example">dorothy@kansasmail.com</string>
+    <string name="last_session_label">Last Successful Login</string>
+    <string name="last_session_example">December 03, 2019 12:30 PM</string>
+    <string name="user_full_name_example">Dorothy Doe</string>
+    <string name="first_name_example">Dorothy</string>
+    <string name="last_name_example">Doe</string>
+
+    <string name="account_info_title">Account Information</string>
+    <string name="forgot_password_title">Forgot Password</string>
+    <string name="history_detail_title">History</string>
+    <string name="payment_info_title">Payment Information</string>
+    <string name="help_title">Help</string>
+    <string name="loan_details_title">Loan Details</string>
+    <string name="account_notes">Account Notes</string>
+    <string name="payoff_request">Payoff Request</string>
+
+    <string name="menu_dialog_title">Login out</string>
+    <string name="menu_dialog_message">Are you sure you want to leave?</string>
+    <string name="button_dialog_positive">Yes</string>
+    <string name="button_dialog_negative">No</string>
+
+    <string name="principal_string">Principal:</string>
+    <string name="deferred_string">Deferred Principal:</string>
+    <string name="curtailment_string">Curtailment\n (Add’l. Principal):</string>
+    <string name="interest_string">Interest:</string>
+    <string name="tax_insurance_string">Tax &amp; Insurance:</string>
+    <string name="misc_insurance_string">Misc Insurance:</string>
+    <string name="subsidy_string">Subsidy:</string>
+    <string name="late_charge_string">Late Charge:</string>
+    <string name="un_applied_string">Unapplied:</string>
+    <string name="un_applied_late_string">Unapplied Late Change:</string>
+    <string name="misc_fee_string">Misc Fee:</string>
+    <string name="return_check_string">Return Check Fee:</string>
+    <string name="loss_draft_fee_string">Loss Draft Fee:</string>
+
+    <string name="login_id_example">NMLS: 224149.</string>
+
+    <string name="loan_details">Loan Details</string>
+    <string name="property_address">Property Address</string>
+    <string name="property_address_value">Street name - 123</string>
+    <string name="payment_frequency">Payment frequency</string>
+    <string name="monthly">Monthly</string>
+    <string name="current_interest_rate">Current Interest Rate</string>
+    <string name="current_interest_rate_value">1.0</string>
+    <string name="current_payment_breakdown">Current Payment Breakdown</string>
+    <string name="principal_amp_interest">Principal &amp; Interest</string>
+    <string name="tax_amp_insurance">Tax &amp; Insurance"</string>
+    <string name="future">(Future)</string>
+    <string name="total_payment_amount">Total Payment Amount</string>
+    <string name="payment_info_future">Payment Information Future Tax \n&amp; Insurance Change</string>
+    <string name="no_future_tax_amp_insurance">No Future Tax &amp; Insurance Change data available at this time.</string>
+
+    <string name="dates">Dates</string>
+    <string name="due_dates_of_next">Due Dates of Next Payments</string>
+    <string name="maturity_date">Maturity Date</string>
+    <string name="five_point_zero_string">5.0</string>
+    <string name="ten_point_zero_string">10.0</string>
+    <string name="example_dates_one">09/01/19</string>
+    <string name="example_dates_two">02/04/19</string>
+    <string name="example_dates_three">17/06/19</string>
+
+    <string name="send_payoff_request">Send Payoff Information To</string>
+    <string name="mail_to_address_on">Mail to address on account</string>
+    <string name="email_to_address_on">Email to address on account</string>
+    <string name="display_on_documents">Display on Documents Tab</string>
+    <string name="example_date_estimated_payoff">Estimated Payoff Date: </string>
+    <string name="example_need_payoff_date">Need Payoff Returned By:  </string>
+    <string name="contact_phone">Contact Phone (___) ___ - _____</string>
+
+    <string name="transaction_desc">Transaction Description</string>
+    <string name="a_detailed_desc">A detailed description of the transaction. For example:
+        A transaction description of “Lockbox” would indicate that the payment was posted through
+        Lockbox processing.
+        Transit NumberEnter the transit number (also referred to as ABA#) of the bank where your
+        account is located. This number can be found in the MICR line at the bottom of your check
+        that you would like the payment drafted from.</string>
+
+    <string name="account_number">Account Number</string>
+    <string name="enter_your_bank">Enter your bank account number.</string>
+    <string name="account_type">Account Type</string>
+    <string name="select_the_type">Select the type of account, either…</string>
+    <string name="additional_principal">Additional Principal</string>
+    <string name="or_additional_curtailment">Or Additional Curtailment. Enter a…</string>
+    <string name="the_rate_used">The rate used in calculating the…"</string>
+    <string name="curtailment">Curtailment</string>
+    <string name="display_the_curtail">Displays the curtailment amount…</string>
+    <string name="due_date">Due Date</string>
+    <string name="display_the_due_date">Displays the due date of the…</string>
+    <string name="the_due_date_of">The due date of the next scheduled…</string>
+    <string name="hazard_flood_insurance">Hazard/Flood Insurance Paid</string>
+
+    <string name="search_account_notes">Search Account Notes</string>
+    <string name="show_entries">Show Entries</string>
+    <string name="account_note_date">Account Note Date</string>
+    <string name="account_note_subject">Account Note Subject</string>
+
+    <string name="transaction_description">Transaction Description</string>
+
+    <string name="a_detailed_description">A detailed description of the transaction.
+        For example: A transaction description of “Lockbox” would indicate that the payment was posted through Lockbox processing.
+        Transit NumberEnter the transit number (also referred to as ABA#) of the bank where your account is located.
+        This number can be found in the MICR line at the bottom of your check that you would like the payment drafted from.</string>
+
+    <!--Test Text for Views-->
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, nunc quisque, quis in fusce,
+        nibh eu tempus sed rutrum in pellentesque, nec viverra vel a. At erat nullam, et porta ut.
+        Et tellus odio minima nec est, ut sed et lorem, sodales varius vestibulum. Voluptates
+        venenatis praesent faucibus, in justo id amet faucibus duis, tincidunt blandit,
+        consectetuer aliquam vivamus, etiam ac sed. Suspendisse sapien est. Iaculis nec ac
+        tempor, vestibulum eleifend diam, est ante, non arcu at donec ut in, nonummy pede in.</string>
+    <string name="lorem_ipsum_short">Lorem ipsum dolor sit amet, nunc quisque, quis in fusce.</string>
+
+    <string name="test_number_two">2</string>
+    <string name="test_number_three">3</string>
+    <string name="test_number_four">4</string>
+    <string name="test_number_five">5</string>
+    <string name="test_number_six">6</string>
+    <string name="test_number_seven">7</string>
+    <string name="test_number_eight">8</string>
+    <string name="test_number_nine">9</string>
+    <string name="test_number_ten">10</string>
+    <string name="test_number_eleven">11</string>
+
+    <string name="test_date_payment_one">Jan - 10</string>
+    <string name="test_date_payment_two">Feb - 10</string>
+    <string name="test_date_payment_three">Mar - 10</string>
+    <string name="test_date_payment_four">Apr - 10</string>
+    <string name="test_date_payment_five">May - 10</string>
+    <string name="test_date_payment_six">Jun - 10</string>
+    <string name="test_date_payment_seven">Jul - 10</string>
+    <string name="test_date_payment_eight">Ago - 10</string>
+    <string name="test_date_payment_nine">Sep - 10</string>
+    <string name="test_date_payment_ten">Oct - 10</string>
+    <string name="test_date_payment_eleven">Nov - 10</string>
+    <string name="test_date_payment_twelve">Dic - 10</string>
+
+    <string name="test_amount_value">$0.00</string>
+
+    <string name="conf_alert_title">Choose a Configuration.</string>
+
+    <string-array name="theme_conf_file_names">
+        <item>bundledskin</item>
+        <item>bundledskindark</item>
+        <item>bundledskinandroid</item>
+    </string-array>
+
+</resources>

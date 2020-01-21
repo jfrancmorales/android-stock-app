@@ -1,0 +1,96 @@
+{
+    "containers" : {
+        "materialColors" : [
+            {
+                "propertyName" : "colorPrimary",
+                "propertyType" : 0,
+                "propertyValue" : "#4a773c"
+            },
+            {
+                "propertyName" : "colorPrimaryVariant",
+                "propertyType" : 0,
+                "propertyValue" : "#314E27"
+            },
+            {
+                "propertyName" : "colorOnPrimary",
+                "propertyType" : 0,
+                "propertyValue" : "#FFFFFF"
+            },
+            {
+                "propertyName" : "colorOnPrimaryVariant",
+                "propertyType" : 0,
+                "propertyValue" : "#8E9196"
+            },
+            {
+                "propertyName" : "colorSecondary",
+                "propertyType" : 0,
+                "propertyValue" : "#bce194"
+            },
+            {
+                "propertyName" : "colorOnSecondary",
+                "propertyType" : 0,
+                "propertyValue" : "#53565a"
+            },
+            {
+                "propertyName" : "colorOnSecondaryVariant",
+                "propertyType" : 0,
+                "propertyValue" : "#8BAf65"
+            },
+            {
+                "propertyName" : "backgroundColor",
+                "propertyType" : 0,
+                "propertyValue" : "#FAFAFA"
+            },
+            {
+                "propertyName" : "colorOnBackground",
+                "propertyType" : 0,
+                "propertyValue" : "#4a773c"
+            },
+            {
+                "propertyName" : "colorSurface",
+                "propertyType" : 0,
+                "propertyValue" : "#FFFFFF"
+            },
+            {
+                "propertyName" : "colorOnSurface",
+                "propertyType" : 0,
+                "propertyValue" : "#000000"
+            },
+            {
+                "propertyName" : "colorError",
+                "propertyType" : 0,
+                "propertyValue" : "#C51162"
+            },
+            {
+                "propertyName" : "colorOnError",
+                "propertyType" : 0,
+                "propertyValue" : "#FFFFFF"
+            }
+        ],
+        "brandImages" : [
+            {
+                "propertyName" : "loginImage",
+                "propertyValue" : "ic_fb_login",
+                "_description" : "",
+                "propertyType" : 2
+            },
+            {
+                "propertyName" : "whitePopupImage",
+                "propertyValue" : "welcome_fb_white",
+                "_description" : "",
+                "propertyType" : 2
+            },
+            {
+                "propertyName" : "noInfoImage",
+                "propertyValue" : "ic_fb_launcher",
+                "_description" : "",
+                "propertyType" : 2
+            },
+            {
+                "propertyName" : "appMenuImage",
+                "propertyValue" : "ic_launcher_stock",
+                "_description" : "",
+                "propertyType" : 2
+            }]
+    }
+}

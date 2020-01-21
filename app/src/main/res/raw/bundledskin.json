@@ -1,0 +1,96 @@
+{
+    "containers" : {
+        "materialColors" : [
+            {
+                "propertyName" : "colorPrimary",
+                "propertyType" : 0,
+                "propertyValue" : "#6200EE"
+            },
+            {
+                "propertyName" : "colorPrimaryVariant",
+                "propertyType" : 0,
+                "propertyValue" : "#3700B3"
+            },
+            {
+                "propertyName" : "colorOnPrimary",
+                "propertyType" : 0,
+                "propertyValue" : "#FFFFFF"
+            },
+            {
+                "propertyName" : "colorOnPrimaryVariant",
+                "propertyType" : 0,
+                "propertyValue" : "#8E9196"
+            },
+            {
+                "propertyName" : "colorSecondary",
+                "propertyType" : 0,
+                "propertyValue" : "#03DAC6"
+            },
+            {
+                "propertyName" : "colorSecondaryVariant",
+                "propertyType" : 0,
+                "propertyValue" : "#03DAC6"
+            },
+            {
+                "propertyName" : "colorOnSecondary",
+                "propertyType" : 0,
+                "propertyValue" : "#53565a"
+            },
+            {
+                "propertyName" : "backgroundColor",
+                "propertyType" : 0,
+                "propertyValue" : "#FAFAFA"
+            },
+            {
+                "propertyName" : "colorOnBackground",
+                "propertyType" : 0,
+                "propertyValue" : "#4a773c"
+            },
+            {
+                "propertyName" : "colorSurface",
+                "propertyType" : 0,
+                "propertyValue" : "#FFFFFF"
+            },
+            {
+                "propertyName" : "colorOnSurface",
+                "propertyType" : 0,
+                "propertyValue" : "#000000"
+            },
+            {
+                "propertyName" : "colorError",
+                "propertyType" : 0,
+                "propertyValue" : "#C51162"
+            },
+            {
+                "propertyName" : "colorOnError",
+                "propertyType" : 0,
+                "propertyValue" : "#FFFFFF"
+            }
+        ],
+        "brandImages" : [
+            {
+                "propertyName" : "loginImage",
+                "propertyValue" : "android_square",
+                "_description" : "",
+                "propertyType" : 2
+            },
+            {
+                "propertyName" : "whitePopupImage",
+                "propertyValue" : "android_round",
+                "_description" : "",
+                "propertyType" : 2
+            },
+            {
+                "propertyName" : "noInfoImage",
+                "propertyValue" : "android_square",
+                "_description" : "",
+                "propertyType" : 2
+            },
+            {
+                "propertyName" : "appMenuImage",
+                "propertyValue" : "android_round",
+                "_description" : "",
+                "propertyType" : 2
+        }]
+    }
+}

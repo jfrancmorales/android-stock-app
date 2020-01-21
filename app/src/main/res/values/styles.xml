@@ -1,0 +1,38 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryVariant</item>
+        <item name="colorAccent">@color/colorSecondary</item>
+        <item name="android:fontFamily">@font/poppins</item>
+    </style>
+
+    <style name="ViewFrame">
+        <item name="android:elevation">12dp</item>
+        <item name="android:background">@color/colorOnSecondary</item>
+    </style>
+
+    <style name="TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeWidth">2dp</item>
+        <item name="boxStrokeColor">@color/colorSecondary</item>
+        <item name="hintTextAppearance">@style/hint_appearance</item>
+        <item name="errorTextAppearance">@style/error_appearance</item>
+    </style>
+
+    <style name="hint_appearance" parent="@android:style/TextAppearance">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/colorPrimaryVariant</item>
+    </style>
+
+    <style name="error_appearance" parent="@android:style/TextAppearance">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/colorOnError</item>
+    </style>
+
+    <style name="Button" parent="TextAppearance.MaterialComponents.Button">
+
+    </style>
+
+</resources>

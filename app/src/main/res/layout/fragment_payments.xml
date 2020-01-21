@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.history.HistoryDetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/payment_detail_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/header_selector_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/bottom_line_background"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/house_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_home_black"
+                    android:backgroundTint="@color/colorOnPrimaryVariant"
+                    android:textAlignment="textEnd"/>
+
+                <!--TODO replace with EdiText TextInputLayout-->
+                <EditText
+                    android:id="@+id/payments_dropdown_edit_text"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="8"
+                    android:background="@android:color/transparent"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:maxLines="1"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorOnPrimaryVariant"
+                    android:textSize="15dp"
+                    android:text="@string/AutoCompleteAddress" />
+
+                <!--TODO replace drawable when arrow down icon is available-->
+                <TextView
+                    android:id="@+id/icon_arrow_down"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_arrow_down_filled"
+                    android:backgroundTint="@color/colorOnPrimaryVariant"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/total_amount_due_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/ViewFrame"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@color/colorBackground"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/calendar_circle_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/ic_calendar_circle" />
+
+                <TextView
+                    android:id="@+id/total_amount_due_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryVariant"
+                    android:textSize="15sp"
+                    android:textAllCaps="true"
+                    android:text="@string/total_amount_due_label"/>
+
+                <TextView
+                    android:id="@+id/total_amount_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:textColor="@color/colorPrimary"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:text="@string/amount_last_payment"/>
+
+                <TextView
+                    android:id="@+id/due_date_payments"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryVariant"
+                    android:textSize="11sp"
+                    android:text="@string/due_date_payments_data"/>
+
+                <Button
+                    android:id="@+id/amount_due_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="25dp"
+                    android:background="@drawable/selector_button"
+                    android:textColor="@color/colorOnPrimary"
+                    android:text="@string/payment_button_text"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/scheduled_payments_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/scheduled_payment_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:drawableEnd="@drawable/ic_icon_event_green"
+                    android:drawableTint="@color/colorPrimary"
+                    android:drawablePadding="5dp"
+                    android:textColor="@color/colorPrimary"
+                    android:text="@string/scheduled_payments_text"/>
+
+                <LinearLayout
+                    android:id="@+id/scheduled_detail_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="8">
+
+                    <TextView
+                        android:id="@+id/clock_icon"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/ic_clock_green_background"
+                        android:layout_weight="2"/>
+
+                    <LinearLayout
+                        android:id="@+id/scheduled_details_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/amount_scheduled"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorSecondaryVariant"
+                            android:textSize="20sp"
+                            android:text="@string/scheduled_payment_amount"/>
+
+                        <TextView
+                            android:id="@+id/date_scheduled"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/date_scheduled_payment"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/edit_delete_scheduled_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/ic_delete_trash_can"
+                            android:drawableTint="@color/colorOnSecondaryVariant"
+                            android:drawablePadding="10sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/ic_edit_pencil"
+                            android:drawableTint="@color/colorOnSecondaryVariant"
+                            android:drawablePadding="10sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/principal_balance_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/ViewFrame"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:gravity="center"
+                android:background="@color/colorBackground"
+                android:weightSum="3"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/principal_balance_info"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_marginStart="10dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/principal_balance_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorSecondaryVariant"
+                        android:text="@string/principal_balance_text"/>
+
+                    <TextView
+                        android:id="@+id/principal_balance_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24dp"
+                        android:textColor="@color/colorSecondaryVariant"
+                        android:textStyle="bold"
+                        android:text="@string/principal_balance_string"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/property_image"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/principal_balance_text"
+                    android:background="@color/colorPrimary"
+                    tools:srcCompat="@tools:sample/avatars"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

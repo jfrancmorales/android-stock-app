@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSurface"
+    tools:context=".ui.navmenu.menuitems.payinfo.PaymentInformationActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="30dp"
+            android:background="@color/colorBackground"
+            android:orientation="vertical">
+
+            <!--loan details-->
+            <LinearLayout
+                android:id="@+id/loan_details_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/loan_details"
+                    android:textColor="@color/colorOnPrimaryVariant"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:background="@drawable/bottom_line_background"/>
+
+                <LinearLayout
+                    android:id="@+id/property_address_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="3dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/property_address"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/colorOnPrimaryVariant"
+                        android:text="@string/property_address"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/property_address_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:textAlignment="textEnd"
+                        android:text="@string/property_address_value"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/payment_frequency_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/payment_frequency"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorOnPrimaryVariant"
+                        android:text="@string/payment_frequency"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/payment_frequency_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:textAlignment="textEnd"
+                        android:text="@string/monthly"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/current_interest_rate_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/current_interest_rate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorOnPrimaryVariant"
+                        android:text="@string/current_interest_rate"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/current_interest_rate_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:textAlignment="textEnd"
+                        android:text="@string/current_interest_rate_value"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--current payment breakdown-->
+            <LinearLayout
+                android:id="@+id/current_payment_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/current_payment_breakdown"
+                    android:textColor="@color/colorOnPrimaryVariant"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:background="@drawable/bottom_line_background"/>
+
+                <LinearLayout
+                    android:id="@+id/current_payment_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="3dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/principal_amp_interest"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/colorOnPrimaryVariant"
+                        android:text="@string/principal_amp_interest"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/principal_amp_interest_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:textAlignment="textEnd"
+                        android:text="@string/five_point_zero_string"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tax_amp_insurance_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/tax_amp_insurance"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorOnPrimaryVariant"
+                        android:text="@string/tax_amp_insurance"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/future"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:textAlignment="textStart"
+                        android:text="@string/future"
+                        android:focusable="true"
+                        android:clickable="true"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/tax_amp_insurance_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:textAlignment="textEnd"
+                        android:text="@string/five_point_zero_string"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/total_payment_amount_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/total_payment_amount"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorOnPrimaryVariant"
+                        android:text="@string/total_payment_amount"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/total_payment_amount_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:textAlignment="textEnd"
+                        android:text="@string/ten_point_zero_string"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--dates-->
+            <LinearLayout
+                android:id="@+id/dates_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dates"
+                    android:textColor="@color/colorOnPrimaryVariant"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:background="@drawable/bottom_line_background"/>
+
+                <LinearLayout
+                    android:id="@+id/due_dates_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/due_dates_next_payments"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/colorOnPrimaryVariant"
+                        android:text="@string/due_dates_of_next"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/due_dates_next_payments_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:textColor="@color/colorPrimary"
+                        android:textAlignment="textEnd"
+                        android:text="@string/example_dates_one"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/maturity_date_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/maturity_date_amount"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorOnPrimaryVariant"
+                        android:text="@string/maturity_date"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/maturity_date_amount_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textAlignment="textEnd"
+                        android:text="@string/example_dates_two"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

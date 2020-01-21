@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/history_item_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp">
+
+    <LinearLayout
+        android:id="@+id/history_item_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal"
+        android:background="@drawable/bottom_line_background"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:id="@+id/card_view_left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/history_number_string"
+                android:textColor="@color/colorOnSecondaryVariant"/>
+
+            <TextView
+                android:id="@+id/payment_number_digit"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:text="@string/history_number_digit"
+                android:textAlignment="center"
+                android:textColor="@color/colorOnPrimaryVariant"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/card_view_middle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/date_last_payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date_scheduled_payment"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorOnSecondaryVariant"/>
+
+            <TextView
+                android:id="@+id/amount_due_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/amount_last_payment"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/card_view_right"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="15dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/icon_arrow_right"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:drawableEnd="@drawable/ic_arrow_right"
+                android:textColor="@color/colorOnSecondaryVariant"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

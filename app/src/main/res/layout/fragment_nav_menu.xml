@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="50dp"
+        android:background="@color/colorBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/menu_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/brand_logo_green"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/menu_top_image_cd"
+                app:srcCompat="@mipmap/ic_launcher"/>
+
+            <RelativeLayout
+                android:id="@+id/profile_clickable_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bottom_line_background"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:id="@+id/profile_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/profile_menu_text"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/menu_text_size"
+                    tools:text="@string/profile_menu_text" />
+
+                <ImageView
+                    android:id="@+id/profile_menu_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="5dp"
+                    android:contentDescription="@string/profile_icon_cd"
+                    app:srcCompat="@drawable/ic_profile_shape_primary" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/payment_info_clickable_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bottom_line_background"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:id="@+id/payment_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/payment_menu_text"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/menu_text_size" />
+
+                <ImageView
+                    android:id="@+id/payment_menu_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="5dp"
+                    android:contentDescription="@string/profile_icon_cd"
+                    app:srcCompat="@drawable/ic_arrow_right" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bank_info_clickable_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bottom_line_background"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:id="@+id/bank_info_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/bank_info_menu_text"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/menu_text_size" />
+
+                <ImageView
+                    android:id="@+id/bank_info_menu_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="5dp"
+                    android:contentDescription="@string/profile_icon_cd"
+                    app:srcCompat="@drawable/ic_arrow_right" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/account_notes_clickable_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bottom_line_background"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:id="@+id/account_notes_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/account_notes_menu_text"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/menu_text_size" />
+
+                <ImageView
+                    android:id="@+id/account_notes__menu_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="5dp"
+                    android:contentDescription="@string/profile_icon_cd"
+                    app:srcCompat="@drawable/ic_arrow_right" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/payoff_clickable_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bottom_line_background"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:id="@+id/payoff_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/payoff_menu_text"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/menu_text_size" />
+
+                <ImageView
+                    android:id="@+id/payoff_menu_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="5dp"
+                    android:contentDescription="@string/profile_icon_cd"
+                    app:srcCompat="@drawable/ic_arrow_right" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/about_clickable_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bottom_line_background"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:id="@+id/about_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/about_menu_text"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/menu_text_size" />
+
+                <ImageView
+                    android:id="@+id/about_menu_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="5dp"
+                    android:contentDescription="@string/profile_icon_cd"
+                    app:srcCompat="@drawable/ic_arrow_right" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/help_clickable_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bottom_line_background"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:id="@+id/help_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/help_menu_text"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/menu_text_size" />
+
+                <ImageView
+                    android:id="@+id/help_menu_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="5dp"
+                    android:contentDescription="@string/profile_icon_cd"
+                    app:srcCompat="@drawable/ic_arrow_right" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/logout_clickable_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bottom_line_background"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:id="@+id/logout_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/logout_menu_text"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/menu_text_size" />
+
+                <ImageView
+                    android:id="@+id/logout_menu_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="5dp"
+                    android:contentDescription="@string/profile_icon_cd"
+                    app:srcCompat="@drawable/ic_logout" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

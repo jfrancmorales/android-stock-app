@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.itexicoapps.androidstock">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.itexicoapps.androidstock.AppAndroidStock"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.itexicoapps.androidstock.NavMenuActivity"
+            android:label="@string/title_activity_main_nav"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <!--Link URL's inApp Mapping-->
+                <data
+                    android:scheme="http"
+                    android:host="www.itexico.com"
+                    android:pathPattern="/Home" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.itexicoapps.androidstock.ui.login.LoginActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.itexicoapps.androidstock.ui.navmenu.menuitems.profile.ProfileActivity"
+            android:label="@string/account_info_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.itexicoapps.androidstock.ui.login.ContactActivity"
+            android:label="@string/contact"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.itexicoapps.androidstock.ui.login.ForgotPasswordActivity"
+            android:label="@string/forgot_password_title"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.itexicoapps.androidstock.ui.navmenu.menuitems.help.HelpTransactionDescActivity"
+            android:label="@string/help_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.itexicoapps.androidstock.ui.navmenu.menuitems.accountnotes.AccountNotesActivity"
+            android:label="@string/account_notes"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.itexicoapps.androidstock.ui.navmenu.menuitems.payoff.PayoffRequestActivity"
+            android:label="@string/payoff_request"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.itexicoapps.androidstock.ui.navmenu.menuitems.payinfo.LoanDetailActivity"
+            android:label="@string/account_notes"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.itexicoapps.androidstock.ui.navmenu.menuitems.help.HelpActivity"
+            android:label="@string/help_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.itexicoapps.androidstock.ui.navmenu.menuitems.payinfo.PaymentInformationActivity"
+            android:label="@string/payment_info_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.itexicoapps.androidstock.ui.history.HistoryDetailActivity"
+            android:label="@string/history_detail_title"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_payments">
+
+    <fragment
+        android:id="@+id/navigation_payments"
+        android:name="com.itexicoapps.androidstock.ui.payments.PaymentsFragment"
+        android:label="@string/title_payments"
+        tools:layout="@layout/fragment_payments" />
+
+    <fragment
+        android:id="@+id/navigation_history"
+        android:name="com.itexicoapps.androidstock.ui.history.HistoryFragment"
+        android:label="@string/title_history"
+        tools:layout="@layout/fragment_history" />
+
+    <fragment
+        android:id="@+id/navigation_statements"
+        android:name="com.itexicoapps.androidstock.ui.statements.StatementsFragment"
+        android:label="@string/title_statements"
+        tools:layout="@layout/fragment_statements" />
+
+    <fragment
+        android:id="@+id/navigation_balances"
+        android:name="com.itexicoapps.androidstock.ui.balances.BalancesFragment"
+        android:label="@string/title_balances"
+        tools:layout="@layout/fragment_balances" />
+
+    <fragment
+        android:id="@+id/navigation_menu"
+        android:name="com.itexicoapps.androidstock.ui.navmenu.AppMenuFragment"
+        android:label="@string/title_menu"
+        tools:layout="@layout/fragment_nav_menu" />
+
+</navigation>

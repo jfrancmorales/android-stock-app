@@ -1,0 +1,231 @@
+{
+    "containers" : {
+        "appSideMenu" : [
+            {
+                "propertyName" : "backgroundColor",
+                "propertyType" : 0,
+                "propertyValue" : "#ffffffff"
+            }
+        ],
+        "appSideMenu.item" : [
+            {
+                "propertyName" : "backgroundColor",
+                "propertyValue" : "#EFF0F0FF",
+                "_description" : "",
+                "propertyType" : 2
+            }
+        ],
+        "screenSignIn" : [
+            {
+                "propertyName" : "tintColor",
+                "propertyValue" : "#D81B60",
+                "_description" : "Fintiv Theme Color",
+                "propertyType" : 0
+            },
+            {
+                "propertyName" : "borderColor",
+                "propertyValue" : "#ffffffff",
+                "_description" : "",
+                "propertyType" : 0
+            },
+            {
+                "propertyName" : "background",
+                "propertyValue" : "#ffffffff",
+                "_description" : "",
+                "propertyType" : 0
+            }
+        ],
+        "navigationBar.title" : [
+            {
+                "propertyName" : "textColor",
+                "propertyType" : 0,
+                "propertyValue" : "#ffffffff"
+            }
+        ],
+        "appSideMenu.item.image" : [
+            {
+                "propertyName" : "tintColor",
+                "propertyValue" : "#005175ff",
+                "_description" : "Fintiv Theme Color",
+                "propertyType" : 2
+            }
+        ],
+        "navigationBar.backItem" : [
+            {
+                "propertyName" : "tintColor",
+                "propertyType" : 0,
+                "propertyValue" : "#ffffffff"
+            }
+        ],
+        "appSideMenu.item.label" : [
+            {
+                "propertyName" : "textColor",
+                "propertyValue" : "#005175ff",
+                "_description" : "Fintiv Theme Color",
+                "propertyType" : 2
+            }
+        ],
+        "screenVerifyPin" : [
+            {
+                "propertyName" : "tintColor",
+                "propertyValue" : "#005175ff",
+                "_description" : "Fintiv Theme Color",
+                "propertyType" : 0
+            },
+            {
+                "propertyName" : "borderColor",
+                "propertyValue" : "#ffffffff",
+                "_description" : "",
+                "propertyType" : 0
+            },
+            {
+                "propertyName" : "background",
+                "propertyValue" : "#ffffffff",
+                "_description" : "",
+                "propertyType" : 0
+            }
+        ],
+        "navigationBar" : [
+            {
+                "propertyName" : "navigationBarColor",
+                "propertyType" : 0,
+                "propertyValue" : "#00574B"
+            },
+            {
+                "propertyName" : "tintColor",
+                "propertyType" : 0,
+                "propertyValue" : "#ffffffff"
+            },
+            {
+                "propertyName" : "backgroundColor",
+                "propertyType" : 0,
+                "propertyValue" : "#1B60D8"
+            },
+            {
+                "propertyName" : "textColor",
+                "propertyType" : 0,
+                "propertyValue" : "#ffffffff"
+            }
+        ],
+        "common" : [
+            {
+                "propertyName" : "backgroundColor",
+                "propertyType" : 0,
+                "propertyValue" : "#ffffffff"
+            },
+            {
+                "propertyName" : "tintColor",
+                "propertyType" : 0,
+                "propertyValue" : "#005175ff"
+            }
+        ],
+        "screenHome" : [
+            {
+                "propertyName" : "tintColor",
+                "propertyValue" : "#005175ff",
+                "_description" : "Fintiv Theme Color",
+                "propertyType" : 0
+            },
+            {
+                "propertyName" : "borderColor",
+                "propertyValue" : "#ffffffff",
+                "_description" : "",
+                "propertyType" : 0
+            },
+            {
+                "propertyName" : "background",
+                "propertyValue" : "#ffffffff",
+                "_description" : "",
+                "propertyType" : 0
+            },
+            {
+                "propertyName" : "backgroundImage",
+                "propertyValue" : "ic_fb_login",
+                "_description" : "",
+                "propertyType" : 2
+            }
+        ],
+        "materialColors" : [
+            {
+                "propertyName" : "colorPrimary",
+                "propertyType" : 0,
+                "propertyValue" : "#4a773c"
+            },
+            {
+                "propertyName" : "colorPrimaryVariant",
+                "propertyType" : 0,
+                "propertyValue" : "#314E27"
+            },
+            {
+                "propertyName" : "colorOnPrimary",
+                "propertyType" : 0,
+                "propertyValue" : "#000000"
+            },
+            {
+                "propertyName" : "colorSecondary",
+                "propertyType" : 0,
+                "propertyValue" : "#bce194"
+            },
+            {
+                "propertyName" : "colorOnSecondary",
+                "propertyType" : 0,
+                "propertyValue" : "#000000"
+            },
+            {
+                "propertyName" : "backgroundColor",
+                "propertyType" : 0,
+                "propertyValue" : "#121212"
+            },
+            {
+                "propertyName" : "colorOnBackground",
+                "propertyType" : 0,
+                "propertyValue" : "#FFFFFF"
+            },
+            {
+                "propertyName" : "colorSurface",
+                "propertyType" : 0,
+                "propertyValue" : "#FFFFFF"
+            },
+            {
+                "propertyName" : "colorOnSurface",
+                "propertyType" : 0,
+                "propertyValue" : "#FFFFFF"
+            },
+            {
+                "propertyName" : "colorError",
+                "propertyType" : 0,
+                "propertyValue" : "#CF6679"
+            },
+            {
+                "propertyName" : "colorOnError",
+                "propertyType" : 0,
+                "propertyValue" : "#000000"
+            }
+        ],
+        "brandImages" : [
+            {
+                "propertyName" : "loginImage",
+                "propertyValue" : "ic_fb_login",
+                "_description" : "",
+                "propertyType" : 2
+            },
+            {
+                "propertyName" : "whitePopupImage",
+                "propertyValue" : "welcome_fb_white",
+                "_description" : "",
+                "propertyType" : 2
+            },
+            {
+                "propertyName" : "noInfoImage",
+                "propertyValue" : "ic_fb_launcher",
+                "_description" : "",
+                "propertyType" : 2
+            },
+            {
+                "propertyName" : "appMenuImage",
+                "propertyValue" : "ic_launcher_stock",
+                "_description" : "",
+                "propertyType" : 2
+        }]
+    }
+}
