@@ -1,6 +1,8 @@
 package com.itexicoapps.androidstock
 
 import android.app.Application
+import android.content.res.Configuration
+import androidx.appcompat.app.AppCompatDelegate
 import com.itexicoapps.androidstock.base.PreferencesManager
 
 val prefs: PreferencesManager by lazy {
@@ -16,6 +18,8 @@ class AppAndroidStock: Application() {
     override fun onCreate() {
         prefs = PreferencesManager(applicationContext)
         super.onCreate()
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+
 
         /*LiftCommerce.setup(
             "987654321",
