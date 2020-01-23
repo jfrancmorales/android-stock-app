@@ -6,3 +6,9 @@ app/src/main/res/.DS_Store
 .idea/workspace.xml
 *.bin
 *.lock
+build/kotlin/sessions/kotlin-compiler-7571240264439194658.salive
+.gradle/buildOutputCleanup/buildOutputCleanup.lock
+.gradle/5.4.1/fileHashes/fileHashes.lock
+.gradle/5.4.1/fileHashes/fileHashes.bin
+.gradle/5.4.1/executionHistory/executionHistory.lock
+.gradle/5.4.1/executionHistory/executionHistory.bin
