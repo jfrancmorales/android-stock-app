@@ -3,3 +3,4 @@
 .git
 app/src/main/res/.DS_Store
 .gradle/5.4.1/fileHashes/fileHashes.lock
+.idea/workspace.xml
