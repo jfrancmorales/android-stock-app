@@ -1,7 +1,6 @@
 package com.itexicoapps.androidstock
 
 import android.app.Application
-import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatDelegate
 import com.itexicoapps.androidstock.base.PreferencesManager
 
