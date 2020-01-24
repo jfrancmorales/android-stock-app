@@ -17,7 +17,7 @@ class AppAndroidStock: Application() {
     override fun onCreate() {
         prefs = PreferencesManager(applicationContext)
         super.onCreate()
-        //AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
 
 
         /*LiftCommerce.setup(
