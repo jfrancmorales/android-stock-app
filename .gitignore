@@ -2,3 +2,4 @@
 .gradle
 .git
 app/android-stock-app-app.iml
+.DS_Store
