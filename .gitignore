@@ -20,3 +20,9 @@ build/kotlin/sessions/kotlin-compiler-7571240264439194658.salive
 .gradle/5.4.1/fileHashes/fileHashes.bin
 .gradle/5.4.1/executionHistory/executionHistory.lock
 .gradle/5.4.1/executionHistory/executionHistory.bin
+.idea/workspace.xml
+*.lock
+*.bin
+*.lock
+*.lock
+.idea/workspace.xml
