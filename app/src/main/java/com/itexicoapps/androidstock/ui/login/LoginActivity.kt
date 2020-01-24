@@ -10,6 +10,7 @@ import androidx.annotation.StringRes
 import android.view.View
 import android.view.inputmethod.EditorInfo
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatDelegate.*
 import com.itexicoapps.androidstock.NavMenuActivity
 
 import com.itexicoapps.androidstock.R
@@ -80,6 +81,7 @@ class LoginActivity : BaseActivity() {
         login_logo_image.setOnClickListener {
             //Testing chameleon color changes
             //showDialog()
+            setDefaultNightMode(MODE_NIGHT_FOLLOW_SYSTEM)
         }
 
         username_edit_text.afterTextChanged {

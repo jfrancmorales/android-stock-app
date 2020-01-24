@@ -5,7 +5,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:name="com.itexicoapps.androidstock.AppAndroidStock"
+        android:name=".AppAndroidStock"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -13,27 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.itexicoapps.androidstock.NavMenuActivity"
-            android:label="@string/title_activity_main_nav"
-            android:launchMode="singleTop"
-            android:screenOrientation="portrait">
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-
-                <!--Link URL's inApp Mapping-->
-                <data
-                    android:scheme="http"
-                    android:host="www.itexico.com"
-                    android:pathPattern="/Home" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name="com.itexicoapps.androidstock.ui.login.LoginActivity"
+            android:name=".ui.login.LoginActivity"
             android:label="@string/app_name"
             android:launchMode="singleTop"
+            android:configChanges="uiMode"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -42,46 +25,74 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.itexicoapps.androidstock.ui.navmenu.menuitems.profile.ProfileActivity"
+            android:name=".NavMenuActivity"
+            android:label="@string/title_activity_main_nav"
+            android:launchMode="singleTop"
+            android:configChanges="uiMode"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <!--Link URL's inApp Mapping example-->
+                <data
+                    android:scheme="http"
+                    android:host="www.itexico.com"
+                    android:pathPattern="/Home" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.navmenu.menuitems.profile.ProfileActivity"
             android:label="@string/account_info_title"
+            android:configChanges="uiMode"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.itexicoapps.androidstock.ui.login.ContactActivity"
+            android:name=".ui.login.ContactActivity"
             android:label="@string/contact"
             android:launchMode="singleInstance"
+            android:configChanges="uiMode"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.itexicoapps.androidstock.ui.login.ForgotPasswordActivity"
+            android:name=".ui.login.ForgotPasswordActivity"
             android:label="@string/forgot_password_title"
             android:launchMode="singleInstance"
+            android:configChanges="uiMode"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.itexicoapps.androidstock.ui.navmenu.menuitems.help.HelpTransactionDescActivity"
+            android:name=".ui.navmenu.menuitems.help.HelpTransactionDescActivity"
             android:label="@string/help_title"
+            android:configChanges="uiMode"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.itexicoapps.androidstock.ui.navmenu.menuitems.accountnotes.AccountNotesActivity"
+            android:name=".ui.navmenu.menuitems.accountnotes.AccountNotesActivity"
             android:label="@string/account_notes"
+            android:configChanges="uiMode"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.itexicoapps.androidstock.ui.navmenu.menuitems.payoff.PayoffRequestActivity"
+            android:name=".ui.navmenu.menuitems.payoff.PayoffRequestActivity"
             android:label="@string/payoff_request"
+            android:configChanges="uiMode"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.itexicoapps.androidstock.ui.navmenu.menuitems.payinfo.LoanDetailActivity"
+            android:name=".ui.navmenu.menuitems.payinfo.LoanDetailActivity"
             android:label="@string/account_notes"
+            android:configChanges="uiMode"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.itexicoapps.androidstock.ui.navmenu.menuitems.help.HelpActivity"
+            android:name=".ui.navmenu.menuitems.help.HelpActivity"
             android:label="@string/help_title"
+            android:configChanges="uiMode"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.itexicoapps.androidstock.ui.navmenu.menuitems.payinfo.PaymentInformationActivity"
+            android:name=".ui.navmenu.menuitems.payinfo.PaymentInformationActivity"
             android:label="@string/payment_info_title"
+            android:configChanges="uiMode"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.itexicoapps.androidstock.ui.history.HistoryDetailActivity"
+            android:name=".ui.history.HistoryDetailActivity"
             android:label="@string/history_detail_title"
+            android:configChanges="uiMode"
             android:screenOrientation="portrait" />
 
         <meta-data
