@@ -29,7 +29,7 @@ open class BaseActivity: AppCompatActivity() {
     var themeSelected = R.style.AppTheme
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        getAppCurrentTheme()
+        //getAppCurrentTheme()
         setTheme(themeSelected)
         super.onCreate(savedInstanceState)
         validateUserSession()
@@ -151,7 +151,7 @@ open class BaseActivity: AppCompatActivity() {
         builder.setSingleChoiceItems(array, -1) { _, which ->
             var theme = array[which]
             prefs.saveStringOnPrefs("current_theme", theme)
-            getAppCurrentTheme()
+            //getAppCurrentTheme()
             setTheme(themeSelected)
             /*with (skinRepository) {
                 this?.applyBundleSkinLocal(confFileName)?.let {

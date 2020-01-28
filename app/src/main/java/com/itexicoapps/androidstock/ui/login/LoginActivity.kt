@@ -80,7 +80,7 @@ class LoginActivity : BaseActivity() {
 
         login_logo_image.setOnClickListener {
             //Testing chameleon color changes
-            showDialog()
+            //showDialog()
             //setDefaultNightMode(MODE_NIGHT_FOLLOW_SYSTEM)
         }
 
