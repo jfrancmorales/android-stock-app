@@ -43,6 +43,48 @@
     <color name="colorErrorD">#f1627f</color>
     <color name="colorOnErrorD">#000000</color>
 
+    <!-- iTexico Pink Theme Colors -->
+
+    <color name="colorPrimaryPink">#E91E63</color>
+    <color name="colorPrimaryVariantPink">#D81B60</color>
+    <color name="colorOnPrimaryPink">#FFFFFF</color>
+    <color name="colorOnPrimaryVariantPink">#828181</color>
+    <color name="colorSecondaryPink">#F9A825</color>
+    <color name="colorSecondaryVariantPink">#FDD835</color>
+    <color name="colorOnSecondaryPink">#616061</color>
+    <color name="colorOnSecondaryVariantPink">#828181</color>
+    <color name="colorBackgroundPink">#FFFFFF</color>
+    <color name="colorBackgroundVariantPink">#EC407A</color>
+    <color name="colorOnBackgroundPink">#F48FB1</color>
+    <color name="colorOnBackgroundVariantPink">#FFFFFF</color>
+    <color name="colorSurfacePink">#FAFAFA</color>
+    <color name="colorOnSurfacePink">#828181</color>
+    <color name="colorOnSurfaceVariantPink">#AD1457</color>
+    <color name="colorErrorPink">#F57F17</color>
+    <color name="colorOnErrorPink">#000000</color>
+
+    <!-- iTexico Orange Theme Colors -->
+
+    <color name="colorPrimaryOrange">#FF5722</color>
+    <color name="colorPrimaryVariantOrange">#FF8A65</color>
+    <color name="colorOnPrimaryOrange">#FFFFFF</color>
+    <color name="colorOnPrimaryVariantOrange">#828181</color>
+    <color name="colorSecondaryOrange">#FF9800</color>
+    <color name="colorSecondaryVariantOrange">#FFB74D</color>
+    <color name="colorOnSecondaryOrange">#616061</color>
+    <color name="colorOnSecondaryVariantOrange">#828181</color>
+    <color name="colorBackgroundOrange">#FFFFFF</color>
+    <color name="colorBackgroundVariantOrange">#FF8A65</color>
+    <color name="colorOnBackgroundOrange">#FB8C00</color>
+    <color name="colorOnBackgroundVariantOrange">#FFF8E1</color>
+    <color name="colorSurfaceOrange">#FAFAFA</color>
+    <color name="colorOnSurfaceOrange">#828181</color>
+    <color name="colorOnSurfaceVariantOrange">#EF6C00</color>
+    <color name="colorErrorOrange">#BF360C</color>
+    <color name="colorOnErrorOrange">#000000</color>
+
+    <!-- Flat Branch Original Theme Colors -->
+
     <color name="colorPrimaryf">#4A773C</color>
     <color name="colorPrimaryVariantf">#314E27</color>
     <color name="colorOnPrimaryf">#FFFFFF</color>

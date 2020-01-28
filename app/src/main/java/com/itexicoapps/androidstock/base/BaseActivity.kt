@@ -25,9 +25,12 @@ open class BaseActivity: AppCompatActivity() {
 
     lateinit var confFileName: String
 
-    //var skinRepository: LCSkinServiceRepository? = null
+    var skinRepository: LCSkinServiceRepository? = null
+    var themeSelected = R.style.AppTheme
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        getAppCurrentTheme()
+        setTheme(themeSelected)
         super.onCreate(savedInstanceState)
         validateUserSession()
     }
@@ -99,6 +102,34 @@ open class BaseActivity: AppCompatActivity() {
         }
     }
 
+    private fun getAppCurrentTheme() {
+        var theme = prefs.getStringFromPrefs("current_theme")
+        if (theme != null) {
+            when (theme) {
+                "Normal" -> {
+                    theme = "Normal"
+                    themeSelected = R.style.AppTheme
+                }
+                "Dark" -> {
+                    theme = "Dark"
+                    themeSelected = R.style.AppThemeDark
+                }
+                "Pink" -> {
+                    theme = "Pink"
+                    themeSelected = R.style.AppThemePink
+                }
+                "Orange" -> {
+                    theme = "Orange"
+                    themeSelected = R.style.AppThemeOrange
+                }
+                //Pending Rainbow support Theme
+            }
+            prefs.saveStringOnPrefs("current_theme", theme)
+        } else {
+            prefs.saveStringOnPrefs("current_theme", "Normal")
+        }
+    }
+
     private fun goToLogin() {
         if (this !is LoginActivity) {
             launchActivity(LoginActivity::class.java)
@@ -118,7 +149,10 @@ open class BaseActivity: AppCompatActivity() {
 
         builder.setTitle(R.string.conf_alert_title)
         builder.setSingleChoiceItems(array, -1) { _, which ->
-            confFileName = array[which]
+            var theme = array[which]
+            prefs.saveStringOnPrefs("current_theme", theme)
+            getAppCurrentTheme()
+            setTheme(themeSelected)
             /*with (skinRepository) {
                 this?.applyBundleSkinLocal(confFileName)?.let {
                     userSession = null // as a example change Colors on command

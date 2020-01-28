@@ -9,6 +9,35 @@
         <item name="android:fontFamily">@font/poppins</item>
     </style>
 
+    <!-- Dark application theme. -->
+    <style name="AppThemeDark" parent="Theme.AppCompat.DayNight">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryD</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryVariantD</item>
+        <item name="colorAccent">@color/colorSecondaryD</item>
+        <item name="actionBarItemBackground">@color/colorPrimaryVariantD</item>
+        <item name="android:background">@color/colorBackgroundD</item>
+        <item name="android:colorBackground">@color/colorBackgroundD</item>
+        <item name="android:fontFamily">@font/poppins</item>
+    </style>
+
+    <!-- Dark application theme. -->
+    <style name="AppThemePink" parent="Theme.AppCompat.DayNight">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPink</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryVariantPink</item>
+        <item name="colorAccent">@color/colorSecondaryPink</item>
+        <item name="android:fontFamily">@font/poppins</item>
+    </style>
+
+    <style name="AppThemeOrange" parent="Theme.AppCompat.DayNight">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryOrange</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryVariantOrange</item>
+        <item name="colorAccent">@color/colorSecondaryOrange</item>
+        <item name="android:fontFamily">@font/poppins</item>
+    </style>
+
     <style name="ViewFrame">
         <item name="android:elevation">12dp</item>
         <item name="android:background">@color/colorOnSecondary</item>
