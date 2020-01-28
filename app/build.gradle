@@ -24,6 +24,34 @@ android {
         buildConfigField "String", "APP_SERVER_BASE_URL", "\"https://flatbranchhomeloans.estatusconnect.com/\""
     }
 
+    flavorDimensions "version"
+    productFlavors {
+        standard {
+            dimension "version"
+            applicationIdSuffix ".normal"
+            versionNameSuffix "-normal"
+
+        }
+        darkmode {
+            dimension "version"
+            applicationIdSuffix ".dark"
+            versionNameSuffix "-dark"
+
+        }
+        pink {
+            dimension "version"
+            applicationIdSuffix ".pink"
+            versionNameSuffix "-pink"
+
+        }
+        orange {
+            dimension "version"
+            applicationIdSuffix ".orange"
+            versionNameSuffix "-orange"
+
+        }
+    }
+
     buildTypes {
         debug {
         }

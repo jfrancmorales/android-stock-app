@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- iTexico Orange Theme Colors -->
+
+    <color name="colorPrimary">#FF5722</color>
+    <color name="colorPrimaryVariant">#FF8A65</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorOnPrimaryVariant">#828181</color>
+    <color name="colorSecondary">#FF9800</color>
+    <color name="colorSecondaryVariant">#FFB74D</color>
+    <color name="colorOnSecondary">#616061</color>
+    <color name="colorOnSecondaryVariant">#828181</color>
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="colorBackgroundVariant">#FF8A65</color>
+    <color name="colorOnBackground">#FB8C00</color>
+    <color name="colorOnBackgroundVariant">#FFF8E1</color>
+    <color name="colorSurface">#FAFAFA</color>
+    <color name="colorOnSurface">#828181</color>
+    <color name="colorOnSurfaceVariant">#EF6C00</color>
+    <color name="colorError">#BF360C</color>
+    <color name="colorOnError">#000000</color>
+
+</resources>
