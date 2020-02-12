@@ -3,3 +3,4 @@
 .git
 app/android-stock-app-app.iml
 app/app.iml
+*.xml
