@@ -24,6 +24,7 @@
     <!-- Dark application theme. -->
     <style name="AppThemePink" parent="Theme.AppCompat.DayNight">
         <!-- Customize your theme here. -->
+        <!--<item name="android:background">@drawable/rainbow_background</item>-->
         <item name="colorPrimary">@color/colorPrimaryPink</item>
         <item name="colorPrimaryDark">@color/colorPrimaryVariantPink</item>
         <item name="colorAccent">@color/colorSecondaryPink</item>
