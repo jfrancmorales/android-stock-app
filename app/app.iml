@@ -35,12 +35,13 @@
           <option name="noStdlib" value="true" />
           <option name="noReflect" value="true" />
           <option name="moduleName" value="app_standardDebug" />
+          <option name="languageVersion" value="1.3" />
+          <option name="apiVersion" value="1.3" />
           <option name="pluginOptions">
             <array>
               <option value="plugin:org.jetbrains.kotlin.android:experimental=false" />
               <option value="plugin:org.jetbrains.kotlin.android:enabled=true" />
               <option value="plugin:org.jetbrains.kotlin.android:defaultCacheImplementation=hashMap" />
-              <option value="plugin:org.jetbrains.kotlin.android:configuration=rO0ABXoAAAHrAAAAAwAIZmVhdHVyZXMAAAABAA92aWV3cyxwYXJjZWxpemUAB3BhY2thZ2UAAAABABxjb20uaXRleGljb2FwcHMuYW5kcm9pZHN0b2NrAAd2YXJpYW50AAAABQBKbWFpbjsvVXNlcnMvZGV2ZWxvcGVyL0l0ZXhpY29Nb2JpbGVSZXBvL2FuZHJvaWQtc3RvY2stYXBwL2FwcC9zcmMvbWFpbi9yZXMAUmRhcmttb2RlOy9Vc2Vycy9kZXZlbG9wZXIvSXRleGljb01vYmlsZVJlcG8vYW5kcm9pZC1zdG9jay1hcHAvYXBwL3NyYy9kYXJrbW9kZS9yZXMATm9yYW5nZTsvVXNlcnMvZGV2ZWxvcGVyL0l0ZXhpY29Nb2JpbGVSZXBvL2FuZHJvaWQtc3RvY2stYXBwL2FwcC9zcmMvb3JhbmdlL3JlcwBKcGluazsvVXNlcnMvZGV2ZWxvcGVyL0l0ZXhpY29Nb2JpbGVSZXBvL2FuZHJvaWQtc3RvY2stYXBwL2FwcC9zcmMvcGluay9yZXMAUnN0YW5kYXJkOy9Vc2Vycy9kZXZlbG9wZXIvSXRleGljb01vYmlsZVJlcG8vYW5kcm9pZC1zdG9jay1hcHAvYXBwL3NyYy9zdGFuZGFyZC9yZXM=" />
             </array>
           </option>
           <option name="pluginClasspaths">
