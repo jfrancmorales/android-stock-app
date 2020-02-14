@@ -1,6 +1,8 @@
 package com.itexicoapps.androidstock.base
 
+import android.Manifest
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.graphics.Color
 import android.os.Bundle
 import android.text.Spannable
@@ -8,6 +10,8 @@ import android.text.SpannableString
 import android.text.style.ForegroundColorSpan
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
 import com.itexicoapps.androidstock.R
 import com.itexicoapps.androidstock.base.materialdesign.MaterialColors
 import com.itexicoapps.androidstock.base.materialdesign.MaterialImages
@@ -165,5 +169,17 @@ open class BaseActivity: AppCompatActivity() {
 
         dialog = builder.create()
         dialog.show()
+    }
+
+    fun isSmsAuthGranted(): Boolean {
+        return ContextCompat.checkSelfPermission(this, Manifest.permission.READ_SMS) == PackageManager.PERMISSION_GRANTED
+    }
+
+    fun requestReadReadSendAuth() {
+        if (ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.READ_SMS)) {
+            // You may display a non-blocking explanation here, read more in the documentation:
+            // https://developer.android.com/training/permissions/requesting.html
+        }
+        /*ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.READ_SMS), SMS)*/
     }
 }
