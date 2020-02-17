@@ -80,6 +80,7 @@ dependencies {
     implementation 'androidx.navigation:navigation-ui-ktx:2.0.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.0.0'
+    implementation "com.google.android.gms:play-services-auth:16.0.1"
 
     //Chameleon implementations
     //Add this 3 libs in the libs folder and the implementation in the build.gradle

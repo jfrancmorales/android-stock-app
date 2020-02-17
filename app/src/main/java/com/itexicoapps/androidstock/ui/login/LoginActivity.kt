@@ -11,6 +11,8 @@ import android.view.View
 import android.view.inputmethod.EditorInfo
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatDelegate.*
+import com.google.android.gms.auth.api.phone.SmsRetriever
+import com.google.android.gms.auth.api.phone.SmsRetrieverClient
 import com.itexicoapps.androidstock.NavMenuActivity
 
 import com.itexicoapps.androidstock.R
@@ -19,6 +21,8 @@ import com.itexicoapps.androidstock.extensions.addImage
 import com.itexicoapps.androidstock.extensions.afterTextChanged
 import com.itexicoapps.androidstock.extensions.applySkinStyle
 import com.itexicoapps.androidstock.extensions.applySkinColors
+import com.itexicoapps.androidstock.smsservices.MessageListener
+import com.itexicoapps.androidstock.smsservices.MessageReceiver
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : BaseActivity() {
@@ -37,6 +41,24 @@ class LoginActivity : BaseActivity() {
                 applyChanges(it)
             }
         }*/
+
+        MessageReceiver.bindListener {
+            Toast.makeText(this, "New Message Received: $it", Toast.LENGTH_SHORT).show()
+        }
+
+        val client: SmsRetrieverClient = SmsRetriever.getClient(this)
+
+        val task = client.startSmsRetriever()
+
+        task.addOnSuccessListener {
+            // Successfully started retriever, expect broadcast intent
+            Toast.makeText(this, "New Message Received: $it", Toast.LENGTH_SHORT).show()
+        }
+
+        task.addOnFailureListener {
+            // Failed to start retriever, inspect Exception for more details
+            Toast.makeText(this, "New Message Received: $it", Toast.LENGTH_SHORT).show()
+        }
 
         loginViewModel = ViewModelProviders.of(this, LoginViewModelFactory())
             .get(LoginViewModel::class.java)
