@@ -43,21 +43,7 @@ class LoginActivity : BaseActivity() {
         }*/
 
         MessageReceiver.bindListener {
-            Toast.makeText(this, "New Message Received: $it", Toast.LENGTH_SHORT).show()
-        }
-
-        val client: SmsRetrieverClient = SmsRetriever.getClient(this)
-
-        val task = client.startSmsRetriever()
-
-        task.addOnSuccessListener {
-            // Successfully started retriever, expect broadcast intent
-            Toast.makeText(this, "New Message Received: $it", Toast.LENGTH_SHORT).show()
-        }
-
-        task.addOnFailureListener {
-            // Failed to start retriever, inspect Exception for more details
-            Toast.makeText(this, "New Message Received: $it", Toast.LENGTH_SHORT).show()
+            app_version_label.text = "New Message Received: $it"
         }
 
         loginViewModel = ViewModelProviders.of(this, LoginViewModelFactory())
@@ -104,6 +90,20 @@ class LoginActivity : BaseActivity() {
             //Testing chameleon color changes
             //showDialog()
             //setDefaultNightMode(MODE_NIGHT_FOLLOW_SYSTEM)
+
+            val client: SmsRetrieverClient = SmsRetriever.getClient(this)
+
+            val task = client.startSmsRetriever()
+
+            task.addOnSuccessListener {
+                // Successfully started retriever, expect broadcast intent
+                app_version_label.text = "Retriever On expect broadcast intent"
+            }
+
+            task.addOnFailureListener {
+                // Failed to start retriever, inspect Exception for more details
+                app_version_label.text = "Fail to start Exception: $it"
+            }
         }
 
         username_edit_text.afterTextChanged {

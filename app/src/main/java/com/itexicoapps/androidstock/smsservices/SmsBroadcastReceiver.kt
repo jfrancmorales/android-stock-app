@@ -22,6 +22,7 @@ class SmsBroadcastReceiver : BroadcastReceiver() {
                 }
                 CommonStatusCodes.TIMEOUT -> {
                     // Handle Timeout error
+                    print("Timeout Error")
                 }
             }
         }

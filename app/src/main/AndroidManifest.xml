@@ -104,7 +104,7 @@
             </intent-filter>
         </receiver>
 
-        <receiver android:name=".SmsBroadcastReceiver" android:exported="true">
+        <receiver android:name=".smsservices.SmsBroadcastReceiver" android:exported="true">
             <intent-filter>
                 <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED"/>
             </intent-filter>
